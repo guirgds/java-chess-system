@@ -1,8 +1,13 @@
 package application;
 
 import boardgame.Board;
+import chess.ChessMacth;
 
 
 public class Program {
-   Board board = new Board(8,8);
+   public static void main(String[] args) {
+
+      ChessMacth chessMacth = new ChessMacth();
+      UI.printBoard(chessMacth.getPieces());
+   }
 }
